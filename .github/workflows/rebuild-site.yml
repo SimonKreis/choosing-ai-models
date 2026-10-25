@@ -1,0 +1,29 @@
+# Copy this file into a repository whose text appears on kreisconsulting.ca (a
+# manuscript, an essay, a project README), at .github/workflows/rebuild-site.yml.
+# Every push to main then rebuilds the site, so the copy there follows within
+# a couple of minutes.
+#
+# Needs one repository secret, CLOUDFLARE_DEPLOY_HOOK: the same deploy hook URL
+# as in the site repository. Without it the job says so and stops, without
+# failing.
+name: Rebuild kreisconsulting.ca
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  rebuild:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Call the Cloudflare deploy hook
+        env:
+          HOOK: ${{ secrets.CLOUDFLARE_DEPLOY_HOOK }}
+        run: |
+          if [ -z "$HOOK" ]; then
+            echo "CLOUDFLARE_DEPLOY_HOOK is not set: nothing to do."
+            exit 0
+          fi
+          curl --fail --silent --show-error -X POST "$HOOK" > /dev/null
+          echo "Site rebuild requested."

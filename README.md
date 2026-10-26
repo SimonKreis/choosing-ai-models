@@ -1,6 +1,4 @@
-# Choosing AI Models for Knowledge Work
-
-**A decision framework**
+# A Decision Framework for AI Models
 
 **Simon Kreis & Claude.** Made with AI, mainly Claude (Anthropic), which contributed in part or in whole to the work. Simon Kreis is responsible for the result. From an original idea by Simon Kreis.
 
@@ -10,10 +8,10 @@ A short essay on turning benchmarks into a choice. Model choice splits into two 
 
 ## Read it
 
-- **Single file:** [`choosing-ai-models.md`](choosing-ai-models.md)
-- **On the web:** [kreisconsulting.ca/projects/choosing-ai-models](https://kreisconsulting.ca/projects/choosing-ai-models/)
+- **Single file:** [`decision-framework-for-ai-models.md`](decision-framework-for-ai-models.md)
+- **On the web:** [kreisconsulting.ca/projects/decision-framework-for-ai-models](https://kreisconsulting.ca/projects/decision-framework-for-ai-models/)
 - **Companion:** [The Self-Contained Harness](https://github.com/SimonKreis/self-contained-harness), Part IV
-- **Report an error:** [open an issue](https://github.com/SimonKreis/choosing-ai-models/issues) with the passage and your source
+- **Report an error:** [open an issue](https://github.com/SimonKreis/decision-framework-for-ai-models/issues) with the passage and your source
 
 ## License
 
@@ -21,4 +19,4 @@ The text is licensed under [Creative Commons Attribution 4.0 International (CC B
 
 ## How to cite
 
-> Kreis, Simon, and Claude (Anthropic). 2026. *Choosing AI Models for Knowledge Work: A Decision Framework*. https://github.com/SimonKreis/choosing-ai-models
+> Kreis, Simon, and Claude (Anthropic). 2026. *A Decision Framework for AI Models*. https://github.com/SimonKreis/decision-framework-for-ai-models

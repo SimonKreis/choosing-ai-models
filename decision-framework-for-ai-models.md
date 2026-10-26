@@ -1,6 +1,4 @@
-# Choosing AI Models for Knowledge Work
-
-## A decision framework
+# A Decision Framework for AI Models
 
 Simon Kreis & Claude
 

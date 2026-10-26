@@ -17,7 +17,7 @@ A short essay on turning benchmarks into a choice. Model choice splits into two 
 
 ## License
 
-The text is licensed under [Creative Commons Attribution 4.0 International (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/). See [`LICENSE`](LICENSE). The system prompt in the essay may be copied and adapted freely.
+The text is licensed under [Creative Commons Attribution 4.0 International (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/). See [`LICENSE`](LICENSE). The system prompts in the essay may be copied and adapted freely.
 
 ## How to cite
 

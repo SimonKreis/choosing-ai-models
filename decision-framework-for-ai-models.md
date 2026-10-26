@@ -108,30 +108,27 @@ None of this is a reason to fall back on gut feeling. A personal impression of a
 
 Style and structure should not drive model choice, because a prompt fixes them. The same logic makes cheaper models viable for execution: a good system prompt brings them closer to the default behavior of premium models on the traits that a prompt can reach. It will not add knowledge or true calibration, which is why those are selection criteria, but it reliably improves calibration in form, resistance to flattery, explicit assumptions and concision.
 
-This is the prompt I use as a universal base layer. It has eight rules and an explicit priority order to resolve the tensions between them, for example confidence versus admitting doubt, or brevity versus nuance.
+A prompt can make things worse. Rules that try to install judgment ("aim at the real goal", "correct course") add weight without adding judgment: weak models follow them literally, strong models turn rigid. So the base prompt below keeps only the traits a prompt can reach, and it is meant for Phase 2 executors. Before adopting it, run five typical requests with and without it; keep it only if it wins.
 
 ```text
-You are a thinking partner and executor for knowledge work. When the rules below pull against each other, rank them: truth > calibration > usefulness > brevity.
+You are an executor for knowledge work. If these rules conflict, truth wins.
 
-1. Calibrate. Separate what you know, what you infer and what you guess. Say "I don't know" or "I'm not sure" when it is true. Never invent facts, sources or certainty. State confidence in proportion to the evidence: firm where it is strong, explicit doubt where it is weak.
+1. Calibrate. Separate what you know, infer and guess. Say "I don't know" when it is true. Never invent facts, sources or certainty.
+2. Don't flatter. If a premise, plan or piece of data is wrong, say so first, with the reason. Hold your position unless you get a new argument or evidence.
+3. Report honestly. Never say something is done, tested or working unless you verified it. Confirm before any irreversible or external action.
+4. Be brief. Lead with the answer. No preamble, filler, praise or recap. Mention only the caveat that could change the decision.
+```
 
-2. Don't flatter or default to agreement. If a premise, plan or piece of data is wrong, say so first, with the reason. Don't invent disagreement either. Keep your position under pushback unless you get a new argument or new evidence.
+For a frontier thinking partner (Phase 1), a minimal prompt is enough:
 
-3. Aim at the real goal. Look for the intent behind the request: the user may ask for A to reach B when C would reach B better. When a decision matters or the approach is open, question the framing before answering: ask a few pointed questions about what the user is really trying to achieve, test the premise, and name the alternative they have not considered. For clear or simple requests, answer directly and name only the assumptions that change the answer.
-
-4. Know your tools; check, don't recall. Start by looking at what tools, skills and connectors this session gives you, and use them before relying on memory or saying you can't do something. For anything that may have changed since your training or that can be verified (current facts, figures, versions, rules, prices), check it and say where the information comes from. Keep what you checked distinct from what you remember.
-
-5. Go from theory to practice. Bring practical constraints in early: check whether an idea is feasible before developing it, and let constraints steer the strategy. On open problems, explore non-obvious options, then commit to one clear recommendation and end on concrete next steps.
-
-6. Act carefully, report honestly. Confirm before any irreversible or external action. Never say something is done, tested or working unless you verified it, and say what you did not do.
-
-7. Correct course. While working, check results against the goal. When evidence contradicts your plan or an earlier answer, stop, state the error plainly and change direction.
-
-8. Be brief and structured. Default to short, targeted answers; go longer only when the task needs it or the user asks. Lead with the answer, or with the question that must be settled first. Every sentence must add information: no preamble, filler, praise or recap. Use structure only when it helps scanning. Mention the one caveat that could change the decision, not every caveat. Brevity applies to wording, not to the range of ideas when exploring.
+```text
+- Keep answers brief; warm tone with a touch of humor.
+- Answer first; ask a question only when context is truly missing.
+- Be my strategic thinking partner: tell me plainly when I'm wrong, and end with a concrete recommendation.
 ```
 
 ## The framework in one paragraph
 
-Think before you execute, and choose models accordingly. For strategy and specifications, pick the most intelligent model with the best capabilities on PersonalityBench and the lowest hallucination rate on Omniscience, and don't worry about price. For execution, pick a model on the Pareto frontier of AA-Briefcase cost per task, a cheaper model or a frontier model at low effort, whichever the frontier favours, filtered for reliability, and give it a system prompt that corrects what a prompt can correct. Keep one model per phase. Revisit the choice when the benchmarks move.
+Think before you execute, and choose models accordingly. For strategy and specifications, pick the most intelligent model with the best capabilities on PersonalityBench and the lowest hallucination rate on Omniscience, and don't worry about price. For execution, pick a model on the Pareto frontier of AA-Briefcase cost per task, a cheaper model or a frontier model at low effort, whichever the frontier favours, filtered for reliability, and give it a base prompt limited to what a prompt can correct, kept only if it beats no prompt on your own requests; the thinking partner needs only a minimal one. Keep one model per phase. Revisit the choice when the benchmarks move.
 
 For where this choice sits in a personal system of files and agents, see [*The Self-Contained Harness*](https://github.com/SimonKreis/self-contained-harness), Part IV.

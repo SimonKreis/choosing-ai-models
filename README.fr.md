@@ -1,4 +1,4 @@
-<!-- translation-of: README.md @ 38c7411ab24ff1b42da8979b0f5084ee292b7d31 -->
+<!-- translation-of: README.md @ 82aa7729d67902614656dba3399b923409b131a4 -->
 
 # Un cadre décisionnel pour les modèles d'IA
 
@@ -19,7 +19,7 @@ Un court essai pour transformer des bancs d'essai en un choix. Le choix d'un mod
 
 ## Licence
 
-Le texte est sous licence [Creative Commons Attribution 4.0 International (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/). Voir [`LICENSE`](LICENSE). Le prompt système de l'essai peut être copié et adapté librement.
+Le texte est sous licence [Creative Commons Attribution 4.0 International (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/). Voir [`LICENSE`](LICENSE). Les prompts système de l'essai peuvent être copiés et adaptés librement.
 
 ## Comment citer
 

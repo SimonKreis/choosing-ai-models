@@ -1,5 +1,7 @@
 # A Decision Framework for AI Models
 
+**English** · [Français](README.fr.md)
+
 **Simon Kreis & Claude.** Made with AI, mainly Claude (Anthropic), which contributed in part or in whole to the work. Simon Kreis is responsible for the result. From an original idea by Simon Kreis.
 
 Updated October 2026.

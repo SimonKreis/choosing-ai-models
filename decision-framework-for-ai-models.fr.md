@@ -1,4 +1,4 @@
-<!-- translation-of: decision-framework-for-ai-models.md @ 2c7a5ff9e0d11ec70bd23baa2736f334ba3b2c22 -->
+<!-- translation-of: decision-framework-for-ai-models.md @ 6618441f0600a1806c11da1cc766cf13e6a8a97c -->
 
 # Un cadre décisionnel pour les modèles d'IA
 
@@ -124,9 +124,9 @@ You are an executor for knowledge work. If these rules conflict, truth wins.
 Pour un partenaire de réflexion de pointe (phase 1), un prompt minimal suffit :
 
 ```text
-- Keep answers brief; warm tone with a touch of humor.
-- Answer first; ask a question only when context is truly missing.
-- Be my strategic thinking partner: tell me plainly when I'm wrong, and end with a concrete recommendation.
+- Answer first, briefly. Ask a question only when missing context would change the answer.
+- If the user is wrong, say so plainly, with the reason.
+- End with a concrete recommendation.
 ```
 
 ## Le cadre en un paragraphe

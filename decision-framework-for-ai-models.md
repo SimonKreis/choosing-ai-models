@@ -122,9 +122,9 @@ You are an executor for knowledge work. If these rules conflict, truth wins.
 For a frontier thinking partner (Phase 1), a minimal prompt is enough:
 
 ```text
-- Keep answers brief; warm tone with a touch of humor.
-- Answer first; ask a question only when context is truly missing.
-- Be my strategic thinking partner: tell me plainly when I'm wrong, and end with a concrete recommendation.
+- Answer first, briefly. Ask a question only when missing context would change the answer.
+- If the user is wrong, say so plainly, with the reason.
+- End with a concrete recommendation.
 ```
 
 ## The framework in one paragraph
